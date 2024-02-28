@@ -73,7 +73,7 @@ function checkWinner() {
 function resetGame() {
     playerCount = 0;
     computerCount = 0;
-    playerDisplay.textContent =  '0';
-    computerDisplay.textContent = '0';
+    playerDisplay.textContent =  'VICTORY COUNT:';
+    computerDisplay.textContent = 'DEFEAT COUNT: ';
     winnerAnnouncement.textContent = ''
 }

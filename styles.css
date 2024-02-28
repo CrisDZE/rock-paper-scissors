@@ -1,0 +1,48 @@
+:root, body, html{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1 {
+    font-family: Honk;
+    background-color: black;
+    margin: 0;
+    padding: 3vw;
+    text-align: center;
+    font-size: 10vw;
+}
+
+body div{
+    display: grid;
+    align-content: center;
+    color: white;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+}
+
+button{
+    background-color: rgb(41, 40, 40);
+    border: none;    
+    color:aliceblue;
+    margin:1vw;
+    height: 15vw;
+    width: 15vw;
+}
+
+button:hover {
+    background-color: white;
+    color:black;
+}
+
+img{
+    display: block;
+    height: 15vw;
+    width: 15vw;
+}
+
+#resetGame{
+    position: relative;
+    float: right;
+    grid-column: 3/4;
+}

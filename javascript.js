@@ -58,15 +58,15 @@ function determineWinner(playerChoice, computerChoice) {
 };
 
 function updateDisplay() {
-    playerDisplay.textContent = String(playerCount);
-    computerDisplay.textContent = String(computerCount);
+    playerDisplay.textContent = `VICTORY COUNT: ${String(playerCount)}`;
+    computerDisplay.textContent = `DEFEAT COUNT: ${String(computerCount)}`;
 }
 
 function checkWinner() {
     if (playerCount === 5 && computerCount < 5) {
-        winnerAnnouncement.textContent = '¡El jugador ha ganado!';
+        winnerAnnouncement.textContent = 'YOU WIN';
     } else if (computerCount === 5 && playerCount < 5) {
-        winnerAnnouncement.textContent = '¡La computadora ha ganado!';
+        winnerAnnouncement.textContent = 'YOU LOSE';
     }
 }
 

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     background-color: black;
+  max-height: 100vw;
 }
 
 h1 {
@@ -42,20 +43,16 @@ img{
 
 #resetGame{
   font-family:"New Rocker", system-ui;
-  justify-content:center;
-  padding: 1rem  0rem 0rem 4rem;
   color:white;
   background-color:black;
-  font-size:3em;
   text-orientation: upright;
   writing-mode: vertical-rl;
-  display: flex;
-  flex-wrap: wrap;
-    position: relative;
-    float: right;
-    grid-column: 4/4;
-    grid-row: 1/4;
-  border: 2px solid lightcoral;
+    grid-column: 4;
+    grid-row: 1;
+  border: 2px solid red;
+  box-sizing: border-box;
+  font-size: 2.7vw;
+  padding: 1vw 0vw 0 0;
 }
 
 #playerResult{
@@ -68,9 +65,9 @@ img{
 }
 
 #winnerAnnouncement{
-  font-size:7vw;
-  grid-column: 1/4;
-  grid-row: 3/4;
+  font-size:13vw;
+  grid-column: 1/5;
+  grid-row: 3;
   display: flex;
   justify-content: center;
   color: red
@@ -79,5 +76,4 @@ img{
 #resetGame:hover{
   background-color: red;
   color: black;
-  border:none;
 }
